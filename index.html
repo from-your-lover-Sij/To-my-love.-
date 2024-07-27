@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter for Angel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe4e1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #ff69b4;
+            text-align: center;
+        }
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        h5 {
+            margin-top: 20px;
+            color: #555;
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .heart {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: #ff69b4;
+            transform: rotate(-45deg);
+            animation: float 5s infinite;
+        }
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #ff69b4;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(-45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(-45deg);
+                opacity: 0;
+            }
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .final-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            text-align: center;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>For my love named Angel</h2>
+        <div id="love-letter">
+            <p>1. I love your smile</p>
+            <p>2. I love your eyes</p>
+            <p>3. I love your laugh</p>
+            <p>4. I love your personality</p>
+            <p>5. I love your selfishness</p>
+            <p>6. I love your gaze</p>
+            <p>7. I love your jokes</p>
+            <p>8. I love your stories</p>
+            <p>9. I love your hair</p>
+            <p>10. I love your nose</p>
+            <p>11. I love your smell</p>
+            <p>12. I love how you make me smile</p>
+            <p>13. You're forgiving</p>
+            <p>14. You're so kind</p>
+            <p>15. You're so smart</p>
+            <p>16. You're helpful</p>
+            <p>17. You're lovely</p>
+            <p>18. I love your style</p>
+            <p>19. I love your sense of humor</p>
+            <p>20. You're so charming</p>
+            <p>21. You're so sweet</p>
+            <p>22. I can feel so comfortable around you</p>
+            <p>23. You're literally perfect</p>
+            <p>24. You're so interesting</p>
+            <p>25. I can talk to you for hours and not get bored</p>
+            <p>26. You're so fun to hang out with</p>
+            <p>27. You're beautiful</p>
+            <p>28. You're so passionate</p>
+            <p>29. You're so intelligent</p>
+            <p>30. You're so creative</p>
+            <p>31. You light up my day</p>
+            <p>32. Meeting you was the best thing that happened to me</p>
+            <p>33. You're so gorgeous</p>
+            <p>34. I love your voice</p>
+            <p>35. You always listen when I yap</p>
+            <p>36. You always care about me</p>
+            <p>37. You're so understanding</p>
+            <p>38. You are so fascinating</p>
+            <p>39. You never make anyone feel alone</p>
+            <p>40. You're incredible</p>
+            <p>41. You look good in everything</p>
+            <p>42. You make me feel loved</p>
+            <p>43. I love that you respect people</p>
+            <p>44. You're respectable</p>
+            <p>45. You're literally my favorite person</p>
+            <p>46. Your smell sooo good</p>
+            <p>47. You're nice to everyone</p>
+            <p>48. You always try and I love it</p>
+            <p>49. You're the definition of perfect (me and my other 10 personalities agree)</p>
+            <p>50. You get jealous and it's so cute (rare though)</p>
+            <p>51. You're soooo attractive</p>
+            <p>52. You're friendly</p>
+            <p>53. You're so loyal</p>
+            <p>54. You're patient with me</p>
+            <p>55. You're observant</p>
+            <p>56. You make sure people are okay</p>
+            <p>57. You have such great energy</p>
+            <p>58. You're so gorgeous</p>
+            <p>59. You're so admirable</p>
+            <p>60. You're so adorable</p>
+            <p>61. Your personality is awesome</p>
+            <p>62. You're cheerful</p>
+            <p>63. You're chatty but a listener</p>
+            <p>64. You're independent</p>
+            <p>65. You're hardworking</p>
+            <p>66. You're honest</p>
+            <p>67. You're very talented</p>
+            <p>68. Your efforts are much appreciated</p>
+            <p>69. You're very supportive</p>
+            <p>70. You're warm-hearted</p>
+            <p>71. You make babies smile (you make me smile)</p>
+            <p>72. You're my baby</p>
+            <p>73. You're beautiful</p>
+            <p>74. You're cute</p>
+            <p>75. You make me feel wanted</p>
+            <p>76. You love your family</p>
+            <p>77. You're on frequency with me</p>
+            <p>78. You let me vent</p>
+            <p>79. I love how you treat your family</p>
+            <p>80. You can bring me up when I'm feeling down</p>
+            <p>81. I love the way you look at me</p>
+            <p>82. There is nothing bad to say about you</p>
+<p>83. You always try your best</p>
+            <p>84. I love that you accept me for who I am</p>
+            <p>85. You always make me feel so special</p>
+            <p>86. You love animals (same)</p>
+            <p>87. You're so brave</p>
+            <p>88. You're so positive</p>
+            <p>89. I love how you treat me like a prince</p>
+            <p>90. I love how you make me a better person</p>
+            <p>91. I love your determination</p>
+            <p>92. You're my soulmate</p>
+            <p>93. You're my best friend</p>
+            <p>94. You complete me</p>
+            <p>95. I love your heart</p>
+            <p>96. I love your soul</p>
+            <p>97. You're my everything</p>
+            <p>98. I love you more every day</p>
+            <p>99. I can't imagine my life without you</p>
+            <p>100. You are my forever love</p>
+        </div>
+        <div class="button-container">
+            <button class="button" id="loveButton">My final message to you, my love.</button></button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="final-message" id="finalMessage">
+        <h2>To my love, Angel.</h2>
+        </pa>Always remember that you're not alone anymore, love. I'm here for you like you are for me.
+ I will never leave your side. 
+ I know not everything can go the way you want it to, but it's fine.
+ It's okay if you're not okay sometimes, I understand it lovey ko.
+ I will always stay by your side and I will never ever let you go, mahal na mahal kita and 
+ I accept you no matter what you are or what you do. Alam ko sa sarili ko na hindi magbabago yung feelings ko for you, I love you so much mahal ko!<p>
+        <button class="back-button" id="backButton">Back</button>
+    </div>
+    <div class="hearts" id="heartsContainer"></div>
+
+    <script>
+        document.getElementById('loveButton').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('finalMessage').style.display = 'block';
+            createHearts();
+        });
+
+        document.getElementById('backButton').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('finalMessage').style.display = 'none';
+        });
+
+        function createHearts() {
+            const heartsContainer = document.getElementById('heartsContainer');
+            heartsContainer.innerHTML = '';
+            for (let i = 0; i < 50; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = Math.random() * 100 + 'vh';
+                heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+                heartsContainer.appendChild(heart);
+            }
+        }
+    </script>
+</body>
+</html>
+
